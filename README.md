@@ -133,6 +133,18 @@ die Entstehungsgeschichte in [`PlatineKi.md`](PlatineKi.md).
 
 Das Projekt ist geprüft, aber **noch nicht als Hardware aufgebaut**.
 
+## 📄 Lizenz
+
+[MIT](LICENSE) — die Lizenz gilt für **alle Bestandteile** dieses Repositorys: die
+Generatorskripte, die KiCad-Entwurfsdateien und die Produktionsdaten. Nachbauen,
+verändern und weitergeben sind ausdrücklich erwünscht, auch kommerziell; der
+Copyright-Hinweis muss erhalten bleiben.
+
+Wie in der MIT-Lizenz festgehalten, erfolgt die Weitergabe **ohne jede Gewährleistung**.
+Das ist hier mehr als eine Formalie: Die Platine führt Netzspannung und ist bislang
+geprüft, aber nicht als Hardware aufgebaut. Wer sie nachbaut, trägt die Verantwortung
+für die eigene Ausführung — siehe Sicherheitshinweis oben.
+
 ---
 
 *KiCad 8.0.8 · kiutils / pcbnew / kicad-cli · Entwurf: Claude (Anthropic) via Claude Code · Rw*
