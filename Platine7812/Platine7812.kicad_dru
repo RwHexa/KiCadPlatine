@@ -1,0 +1,19 @@
+(version 1)
+
+# Eigene Entwurfsregeln fuer Platine7812
+# ======================================
+# Die Platine fuehrt auf der Primaerseite Netzspannung (230 V~). Zwischen
+# Primaer- und Sekundaerkreis muss eine Kriechstrecke eingehalten werden;
+# 6,4 mm entsprechen der ueblichen Forderung fuer verstaerkte Isolierung bei
+# 230 V~ / Verschmutzungsgrad 2 (EN 62368-1). Diese Regel laesst KiCad das
+# nachrechnen, statt sich auf die gezeichnete Barrierenlinie zu verlassen.
+
+(rule "Isolation Primaer gegen Sekundaer"
+	(constraint clearance (min 6.4mm))
+	(condition "A.NetClass == 'Netzspannung' && B.NetClass != 'Netzspannung'"))
+
+# Abstand der netzspannungsfuehrenden Bahnen untereinander (L gegen N):
+# Funktionsisolierung, hier grosszuegige 2,5 mm.
+(rule "Abstand innerhalb der Netzspannung"
+	(constraint clearance (min 2.5mm))
+	(condition "A.NetClass == 'Netzspannung' && B.NetClass == 'Netzspannung'"))

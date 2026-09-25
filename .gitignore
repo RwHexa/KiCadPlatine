@@ -1,0 +1,25 @@
+# Betriebssystem / Editor
+Thumbs.db
+desktop.ini
+.DS_Store
+ehthumbs.db
+
+# KiCad: lokal bzw. automatisch erzeugt
+*-backups/
+fp-info-cache
+*.kicad_prl
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Zwischenprodukte von Kontrollplots
+svg/
+pcb_check.pdf
+
+# Office-/Temp-Reste
+~$*
+*.tmp
+*.bak
+
+# Zwischendatei der MD->PDF-Konvertierung
+*_tmp.html

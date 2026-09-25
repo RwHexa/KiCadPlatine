@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Platine7812")(type "KiCad")(uri "${KIPRJMOD}/Platine7812.pretty")(options "")(descr "Projekt-Footprints"))
+)
